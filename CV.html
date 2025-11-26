@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Malik</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 210mm; /* Formato A4 */
+            margin: 20px auto;
+            padding: 15mm;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+        }
+
+        /* Cabeçalho */
+        header {
+            border-bottom: 2px solid #d32f2f; /* Linha vermelha */
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        h1 {
+            color: #000;
+            margin: 0;
+            font-size: 2.2em;
+        }
+        .contact-info {
+            color: #555;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .contact-info a {
+            color: #555;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            color: #d32f2f;
+        }
+
+        /* Seções */
+        h2 {
+            color: #fff;
+            background-color: #424242; /* Cinza escuro */
+            padding: 8px 12px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            border-left: 4px solid #d32f2f; /* Destaque vermelho */
+        }
+
+        /* Listas */
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        /* Bullets Vermelhos */
+        ul li::before {
+            content: "•";
+            color: #d32f2f;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Experiência e Formação */
+        .job, .education {
+            margin-bottom: 20px;
+        }
+        .job-title, .education-course {
+            font-weight: bold;
+            color: #000;
+        }
+        .company, .institution {
+            color: #d32f2f;
+            font-weight: 500;
+        }
+        .date {
+            color: #666;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        .description {
+            margin-top: 5px;
+            color: #555;
+        }
+
+        /* Habilidades */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background-color: #f5f5f5; /* Cinza muito claro */
+            padding: 5px 12px;
+            border-radius: 4px;
+            border-left: 3px solid #d32f2f;
+            font-size: 0.9em;
+        }
+        .btn{
+            position: fixed;
+            top: 5%;
+            left: 4%;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 1000px;
+            background-color: #e63946;
+            color: white;
+            font-weight: bold;
+            transition: all 0.6 ease;
+        }
+        .btn:hover{
+            background: #fff;
+            border: 2px solid #e63946;
+            color:black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Malik</h1>
+            <div class="contact-info">
+                Av Grande Maputo, bairro Kumbeza, condomínio do Zimpeto, bloco A5E |
+                <a href="tel:+258863424726">863424726</a> |
+                <a href="mailto:mkteeno@gmail.com">mkteeno@gmail.com</a> |
+                Data: 22/04/2025
+            </div>
+        </header>
+
+        <section>
+            <h2>Resumo Profissional</h2>
+            <p>Sou estudante com forte interesse e habilidades na área de informática, com destaque para a resolução de problemas relacionados a computadores. Tenho experiência prática na criação de panfletos usando o Photoshop e estou atualmente a aprender programação, desenvolvendo pequenos projetos próprios. Também utilizo o Obsidian para organizar rotinas e melhorar a produtividade pessoal. Sou observador, analítico, crítico e gosto de aprender de forma contínua.</p>
+        </section>
+
+        <section>
+            <h2>Formação Acadêmica</h2>
+            <div class="education">
+                <div class="education-course">Curso de Técnico de Suporte Informático (CV4)</div>
+                <div class="institution">Instituto de Transportes e Comunicações (ITC)</div>
+                <div class="date">Atualmente no 2º ano</div>
+                <div class="description">Aprendizado sobre manutenção de sistemas, redes, hardware e software.</div>
+            </div>
+            <div class="education">
+                <div class="education-course">10ª Classe</div>
+                <div class="institution">Colégio Mentes Brilhantes</div>
+                <div class="description">Base sólida em disciplinas fundamentais, desenvolvendo raciocínio lógico e pensamento crítico.</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experiência e Projetos</h2>
+            <div class="job">
+                <div class="job-title">Oficina de Soldagem</div>
+                <div class="company">ITC – CV3 (Curso de Eletricidade)</div>
+                <div class="description">Aprendizagem sobre soldagem, corte de metais e leitura de esquemas técnicos. Experiência valiosa para o desenvolvimento da atenção ao detalhe.</div>
+            </div>
+            <div class="job">
+                <div class="job-title">Designer Gráfico Freelancer</div>
+                <div class="description">Criação de panfletos publicitários com Photoshop para uma empresa de bebidas. Desenvolvimento de criatividade e responsabilidade com prazos reais.</div>
+            </div>
+            <div class="job">
+                <div class="job-title">Projetos de Programação e Organização Pessoal</div>
+                <div class="description">Desenvolvimento de pequenos projetos de programação por iniciativa própria. Utilização de ferramentas como o Obsidian para planeamento e gestão pessoal.</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Competências</h2>
+            <div class="skills-container">
+                <span class="skill">Boa comunicação escrita e falada</span>
+                <span class="skill">Resolução de problemas técnicos</span>
+                <span class="skill">Pensamento crítico e analítico</span>
+                <span class="skill">Ferramentas digitais (Photoshop, Obsidian)</span>
+                <span class="skill">Aprendizagem contínua</span>
+                <span class="skill">Trabalho autónomo e em equipa</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hobbies</h2>
+            <p>Gosto de desenvolver projetos de programação, ler livros e pesquisar sobre diversos assuntos que despertam a minha curiosidade.</p>
+        </section>
+    </div>
+    <a href="index.html" class="btn"> < Voltar</a>
+</body>
+</html>
